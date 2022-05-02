@@ -1,0 +1,12 @@
+.card-image{
+    object-fit: fill !important;
+ 
+}
+.card-btn{
+    min-width: 150px !important;
+}
+.spinner{
+    width: 26px !important;
+    color: white !important;
+    height: 26px !important;
+}

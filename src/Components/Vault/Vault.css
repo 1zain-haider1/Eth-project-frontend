@@ -1,0 +1,9 @@
+.overflow {
+    height: max-content;
+    max-height: 1183px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.listing-container {
+    min-height: 400px;
+}

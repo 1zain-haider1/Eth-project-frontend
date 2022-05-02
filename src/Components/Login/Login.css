@@ -1,0 +1,36 @@
+.login-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+.login {
+  height: 100vh;
+}
+
+.phantom-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #222222;
+  border-radius: 10px;
+}
+
+.phantom-logo {
+  height: 6rem;
+}
+.wallet-adapter-button {
+  height: 61px !important;
+  justify-content: center !important;
+  padding: 0 70px !important;
+  border-radius: 8px !important;
+}
+.wallet-adapter-button:hover {
+  background-color: #512da8 !important;
+}
+.login-btn {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
