@@ -1,0 +1,3 @@
+interface ValidUpdate {
+  mintStatus: MintStatus;
+}
