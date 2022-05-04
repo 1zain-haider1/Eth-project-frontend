@@ -13,6 +13,7 @@ import { clusterApiUrl } from "@solana/web3.js";
 import Dashboard from "./Dashboard";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { ClientComponent } from "./sokcketTest";
+import { AuthContextProvider } from "./context/AuthContext";
 // import Auction from "./Components/Auctions/Auctions";
 // import Vault from "./Components/Vault/Vault";
 // import Mints from "./Components/Mints/Mints";
@@ -47,6 +48,7 @@ const App: FC = () => {
       <BrowserRouter>
         {/* <WalletProvider wallets={wallets} autoConnect>
           <WalletModalProvider> */}
+          <AuthContextProvider>
             <Switch>
               <Route exact path="/" component={Login} />
               <Dashboard>
@@ -57,6 +59,7 @@ const App: FC = () => {
                 <Route exact path="/auctions" component={Auction} /> */}
               </Dashboard>
             </Switch>
+            </AuthContextProvider>
           {/* </WalletModalProvider> */}
         {/* </WalletProvider> */}
       </BrowserRouter>

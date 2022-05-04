@@ -14,7 +14,8 @@ import PhantomLogo from "../../assets/images/phantom.png";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { useHistory } from "react-router-dom";
 import { toast } from "react-toastify";
-import {connectWalletProvider, getMetamaskAcctAddress} from '../../service/walletProvider'
+import {connectWalletProvider, getMetamaskAcctAddress} from '../../service/walletProvider';
+import MetamaskLogin from '../../service/metamaskLogin';
 import "./Login.css";
 const adminAddress = process.env.REACT_APP_ADMIN_ADDRESS;
 const Login: FC = () => {
@@ -85,6 +86,7 @@ const Login: FC = () => {
             <WalletMultiButton />
             <ClientComponent />
           </div> */}
+          <MetamaskLogin />
           <a className="text-white login-btn" onClick={()=>updateWallet()}>Login</a>
         </div>
       </div>
